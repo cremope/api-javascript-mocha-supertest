@@ -4,7 +4,7 @@
   "description": "",
   "main": "linguagem.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js --timeout 10000",
+    "test": "mocha ./test/**/*.test.js --timeout 10000 --reporter mochawesome",
     "test:debug": "node --inspect-brk ./node_modules/mocha/bin/_mocha --timeout 60000 ./test/**/*.test.js"
   },
   "repository": {
@@ -22,6 +22,7 @@
   "dependencies": {
     "chai": "^6.2.0",
     "mocha": "^11.7.4",
+    "mochawesome": "^7.1.4",
     "supertest": "^7.1.4"
   }
 }
