@@ -1,0 +1,26 @@
+{
+  "name": "api-javascript-mocha-supertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linguagem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cremope/api-javascript-mocha-supertest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cremope/api-javascript-mocha-supertest/issues"
+  },
+  "homepage": "https://github.com/cremope/api-javascript-mocha-supertest#readme",
+  "dependencies": {
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
+  }
+}
