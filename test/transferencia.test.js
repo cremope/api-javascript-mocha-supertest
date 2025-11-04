@@ -61,7 +61,7 @@ describe('Transferencias', () => {
             expect(response.body.id).to.be.a('number');
             expect(response.body.conta_origem_id).to.equal(1);
             expect(response.body.conta_destino_id).to.equal(2);
-            expect(response.body.valor).to.equal('11.00');
+            expect(response.body.valor).to.equal(11);
         });
     });
 

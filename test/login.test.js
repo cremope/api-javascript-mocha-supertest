@@ -14,6 +14,8 @@ describe('Login', () => {
             expect(response.status).to.equal(200);
             expect(response.body.token).to.be.a('string');
             
+            console.log(' ');
+            console.log('---------------Response---------------');
             console.log('Status Code:', response.status);
             console.log('Token:', response.body.token);
         });
