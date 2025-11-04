@@ -66,6 +66,6 @@ Sugestão: para executar os testes e abrir o relatório HTML automaticamente, ad
 ```
 
 ## ScreenShots
-<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/main/screenshots/overview_mochawesome.png" width="400" /> 
-<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/main/screenshots/overview_mochawesome_OK.png" width="400" /> 
-<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/main/screenshots/overview_mochawesome_NOK.png" width="400" /> 
+<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/master/screenshots/overview_mochawesome.png" width="400" /> 
+<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/master/screenshots/overview_mochawesome_OK.png" width="400" /> 
+<img src="https://github.com/cremope/api-javascript-mocha-supertest/blob/master/screenshots/overview_mochawesome_NOK.png" width="400" /> 
