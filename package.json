@@ -21,6 +21,7 @@
   "homepage": "https://github.com/cremope/api-javascript-mocha-supertest#readme",
   "dependencies": {
     "chai": "^6.2.0",
+    "dotenv": "^17.2.3",
     "mocha": "^11.7.4",
     "mochawesome": "^7.1.4",
     "supertest": "^7.1.4"

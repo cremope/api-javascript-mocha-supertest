@@ -1,11 +1,11 @@
 const request = require('supertest');
 const {expect} = require('chai');
+require('dotenv').config()
 
 describe('Transferencias', () => {
     describe('POST /transferencias', () => {
-
         it('Deve retornar sucesso com 201 quando o valor da transferencia for igual ou acima de 10 reais', async () => {
-            const response_Login = await request('http://localhost:3000')
+            const response_Login = await request(process.env.BASE_URL)
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send({
@@ -15,7 +15,7 @@ describe('Transferencias', () => {
             
             const token = response_Login.body.token;
 
-            const response = await request('http://localhost:3000')
+            const response = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
                 .set('Authorization', `Bearer ${token}`)
@@ -34,7 +34,7 @@ describe('Transferencias', () => {
         });
 
         it('Deve retornar falha com 422 quando o valor da transferencia for abaixo de 10 reais', async () => {
-            const response_Login = await request('http://localhost:3000')
+            const response_Login = await request(process.env.BASE_URL)
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send({
@@ -44,7 +44,7 @@ describe('Transferencias', () => {
             
             const token = response_Login.body.token;
 
-            const response = await request('http://localhost:3000')
+            const response = await request(process.env.BASE_URL)
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
                 .set('Authorization', `Bearer ${token}`)
@@ -61,6 +61,5 @@ describe('Transferencias', () => {
             console.log('Status Code:', response.status);
             console.log('Response Body:', response.body);
         });
-
     });
 });
